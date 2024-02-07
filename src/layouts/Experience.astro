@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Pagination from "@components/Pagination.astro";
+import Card from "@components/Card";
+import NotLinkCard from "@components/NotLinkCard";
+import { SITE } from "@config";
+
+export interface Props {
+  currentPage: number;
+  totalPages: number;
+  paginatedPosts: CollectionEntry<"experience">[];
+}
+
+const { currentPage, totalPages, paginatedPosts } = Astro.props;
+---
+
+<Layout title={`Experience | ${SITE.title}`}>
+  <Header activeNav="experience" />
+  <Main pageTitle="Experience" pageDesc="All the experience I've got.">
+    <ul>
+      {
+        paginatedPosts.map(({ data, slug }) => (
+          <NotLinkCard frontmatter={data} />
+        ))
+      }
+    </ul>
+  </Main>
+
+  <!-- <Pagination
+    {currentPage}
+    {totalPages}
+    prevUrl={`/experience${currentPage - 1 !== 1 ? "/" + (currentPage - 1) : ""}/`}
+    nextUrl={`/experience/${currentPage + 1}/`}
+  /> -->
+  <!-- <Footer noMarginTop={totalPages > 1} /> -->
+</Layout>

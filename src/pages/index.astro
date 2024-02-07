@@ -1,0 +1,203 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import LinkButton from "@components/LinkButton.astro";
+import Hr from "@components/Hr.astro";
+import Card from "@components/Card";
+import Socials from "@components/Socials.astro";
+import getSortedPosts from "@utils/getSortedPosts";
+import { SOCIALS } from "@config";
+
+const posts = await getCollection("blog");
+
+const sortedPosts = getSortedPosts(posts);
+const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
+const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+
+const socialCount = SOCIALS.filter(social => social.active).length;
+---
+
+<Layout>
+  <Header />
+  <main id="main-content">
+    <section id="hero">
+      <img src="/main_image.jpeg" alt="Nam P. Nguyen" width="200" height="200">
+      <div id="text-hero">
+        <h1>Nam P. Nguyen</h1>
+        <a
+          target="_blank"
+          href="/rss.xml"
+          class="rss-link"
+          aria-label="rss feed"
+          title="RSS Feed"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
+            ><path
+              d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
+            ></path><path
+              d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
+            ></path><circle cx="6" cy="18" r="2"></circle>
+          </svg>
+          <span class="sr-only">RSS Feed</span>
+        </a>
+
+        <p>
+          Hi there !
+          <br />
+          Hope you find something interesting on my website.
+          <br />
+          <br />
+          Software Development - Distributed System - Software Architecture
+        </p>
+        {
+          // only display if at least one social link is enabled
+          socialCount > 0 && (
+            <div class="social-wrapper">
+              <div class="social-links">Social Links:</div>
+              <Socials />
+            </div>
+          )
+        }
+      </div>
+    </section>
+
+    <Hr />
+
+    {
+      featuredPosts.length > 0 && (
+        <>
+          <section id="featured">
+            <h2>Fun Facts About Me</h2>
+            <br />
+            <p>● I’m currently researching Distributed & AI(NLP) Systems<p>
+            <br />
+            <p>● I'm always looking for someone with the same passion as me<p>
+            <br />
+            <p>● and those who enjoy blending practical work with scientific research.<p>
+            <br />
+            <p>● Not fond of a stable life, until you no longer see this sentence on my website.&#128513;<p>
+            <br />
+            <p>● Relax with history and philosophy.<p>
+          </section>
+          {recentPosts.length > 0 && <Hr />}
+        </>
+      )
+    }
+
+    <section id="camo-skill">
+        <h2>Programing Languages</h2>
+        <br />
+        <div id="flex-row">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/354238/python.svg">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/349419/javascript.svg">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/355038/golang.svg">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/473774/rust.svg">
+        </div>
+        <br />
+        <h2>Databases</h2>
+        <br />
+        <div id="flex-row">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/373845/mongo.svg">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/354200/postgresql.svg">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/354272/redis.svg">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/315122/other-1.svg">
+        </div>
+        <br />
+        <h2>Infrastructure</h2>
+        <br />
+        <div id="flex-row">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/376356/aws.svg">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/354926/docker.svg">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/373699/jenkins.svg">
+          <img class="marginRight" width="5%" src="https://www.svgrepo.com/show/315122/other-1.svg">
+        </div>
+    </section>
+
+    {/* {
+      recentPosts.length > 0 && (
+        <section id="recent-posts">
+          <h2>Recent Posts</h2>
+          <ul>
+            {recentPosts.map(
+              ({ data, slug }, index) =>
+                index < 4 && (
+                  <Card
+                    href={`/posts/${slug}/`}
+                    frontmatter={data}
+                    secHeading={false}
+                  />
+                )
+            )}
+          </ul>
+        </section>
+      )
+    }
+
+    <div class="all-posts-btn-wrapper">
+      <LinkButton href="/posts/">
+        All Posts
+        <svg xmlns="http://www.w3.org/2000/svg"
+          ><path
+            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+          ></path>
+        </svg>
+      </LinkButton>
+    </div>
+    */}
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* ===== Hero Section ===== */
+  #hero {
+    @apply pb-6 pt-8 flex sm:flex-row sm:items-center;
+  }
+  #text-hero {
+    @apply ml-8;
+  }
+  #hero h1 {
+    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+  }
+  #hero .rss-link {
+    @apply mb-6;
+  }
+  #hero .rss-icon {
+    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+  }
+  #hero p {
+    @apply my-2;
+  }
+  .social-wrapper {
+    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+  }
+  .social-links {
+    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+  }
+
+  #flex-row {
+    @apply flex sm:flex-row
+  }
+
+  .marginRight {
+    @apply mr-8
+  }
+
+  /* ===== Featured & Recent Posts Sections ===== */
+  #featured,
+  #camo-skill,
+  #recent-posts {
+    @apply pb-6 pt-12;
+  }
+  #featured h2,
+  #camo-skill h2,
+  #recent-posts h2 {
+    @apply text-2xl font-semibold tracking-wide;
+  }
+  .all-posts-btn-wrapper {
+    @apply my-8 text-center;
+  }
+</style>
