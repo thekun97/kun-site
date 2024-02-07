@@ -12,10 +12,6 @@ import { SOCIALS } from "@config";
 
 const posts = await getCollection("experience");
 
-const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
-
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
@@ -65,26 +61,21 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <Hr />
 
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Fun Facts About Me</h2>
-            <br />
-            <p>● I’m currently researching Distributed & AI(NLP) Systems<p>
-            <br />
-            <p>● I'm always looking for someone with the same passion as me<p>
-            <br />
-            <p>● and those who enjoy blending practical work with scientific research.<p>
-            <br />
-            <p>● Not fond of a stable life, until you no longer see this sentence on my website.&#128513;<p>
-            <br />
-            <p>● Relax with history and philosophy.<p>
-          </section>
-          {recentPosts.length > 0 && <Hr />}
-        </>
-      )
-    }
+    <section id="featured">
+      <h2>Fun Facts About Me</h2>
+      <br />
+      <p>● I’m currently researching Distributed & AI(NLP) Systems<p>
+      <br />
+      <p>● I'm always looking for someone with the same passion as me<p>
+      <br />
+      <p>● and those who enjoy blending practical work with scientific research.<p>
+      <br />
+      <p>● Not fond of a stable life, until you no longer see this sentence on my website.&#128513;<p>
+      <br />
+      <p>● Relax with history and philosophy.<p>
+    </section>
+
+    <Hr />
 
     <section id="camo-skill">
         <h2>Programing Languages</h2>
