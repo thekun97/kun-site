@@ -1,13 +1,13 @@
 import { SITE } from "@config";
 import { defineCollection, z } from "astro:content";
 
-const blog = defineCollection({
+const experienceCollection = defineCollection({
   type: "content",
   schema: ({ image }) =>
     z.object({
       author: z.string().default(SITE.author),
-      pubDatetime: z.date(),
-      modDatetime: z.date().optional().nullable(),
+      startDate: z.date(),
+      endDate: z.date().optional().nullable(),
       title: z.string(),
       featured: z.boolean().optional(),
       draft: z.boolean().optional(),
@@ -23,4 +23,6 @@ const blog = defineCollection({
     }),
 });
 
-export const collections = { blog };
+export const collections = { 
+  "experience": experienceCollection
+};

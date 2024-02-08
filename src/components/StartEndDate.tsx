@@ -55,7 +55,7 @@ export default function StartEndDate({
 
 const FormattedDatetime = ({ date }) => {
   let dateFormat = "present"
-  if (date !== 0) {
+  if (date !== "1970-01-11T22:58:30.521Z") {
     dateFormat = format(
       date
         .toISOString(LOCALE.langTag, {

@@ -3,7 +3,7 @@ author: Nam
 startDate: 2020-03-01T15:22:00Z
 endDate: 2020-05-21T09:12:47.400Z
 title: Microtech - Software Engineer
-slug: 1-1
+slug: exp-1
 featured: true
 draft: false
 tags:

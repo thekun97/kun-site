@@ -1,9 +1,9 @@
 ---
 author: Nam
 startDate: 2023-08-01T15:22:00Z
-endDate: 0
+endDate: 1970-01-11T22:58:30.521Z
 title: DIGI-TEXX - Senior Software Engineer
-slug: 1-4
+slug: exp-4
 featured: true
 draft: false
 tags:

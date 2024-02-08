@@ -1,9 +1,9 @@
 ---
 author: Nam
 startDate: 2023-01-23T15:22:00Z
-endDate: 0
+endDate: 1970-01-11T22:58:30.521Z
 title: RAG chat bot
-slug: 1-1
+slug: proj-1
 featured: true
 draft: false
 tags:

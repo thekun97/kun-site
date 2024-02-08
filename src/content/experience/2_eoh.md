@@ -3,7 +3,7 @@ author: Nam
 startDate: 2020-08-23T15:22:00Z
 endDate: 2022-12-21T09:12:47.400Z
 title: EoH - Software Engineer
-slug: 1-2
+slug: exp-2
 featured: true
 draft: false
 tags:

@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Nam P. Nguyen</title><description>My personal site.</description><link>https://astro-paper.pages.dev/</link></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Nam P. Nguyen</title><description>My personal site.</description><link>https://astro-paper.pages.dev/</link><item><title>DIGI-TEXX - Senior Software Engineer</title><link>https://astro-paper.pages.dev/posts/exp-4/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-4/</guid><description>● Clean and standardize code base.
+● Automate BDD testing, building, and deployment on Jenkins.
+● Implement new features for the AI micro-services system.
+● Optimize on-premise resource efficiency through the implementation of multi-processing/multi-threading.
+--- Python, Go, Celery, RabbitMQ, Jenkins ---</description><pubDate>Tue, 01 Aug 2023 15:22:00 GMT</pubDate></item><item><title>Global Tech - Data Engineer</title><link>https://astro-paper.pages.dev/posts/exp-3/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-3/</guid><description>● Develop a data streaming application for seamless communication among systems.
+● Pre-process, clean, and standardize data according to the schema standard.
+● --- NiFi, Kafka, Elasticsearch, Python, Scala ---</description><pubDate>Thu, 01 Dec 2022 15:22:00 GMT</pubDate></item><item><title>EoH - Software Engineer</title><link>https://astro-paper.pages.dev/posts/exp-2/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-2/</guid><description>● Design, develop and maintain the smart home features.
+● Integrate IoT devices into the backend (google speakers, partner’s smart device,…).
+● 100% unittest coverage (TDD style).
+● Apply load testing for important APIs and user scenarios (Locust).
+● Assisting in the development of CI/CD workflows.
+● Management and deployment of cloud resources within the AWS.
+● Error Tracking &amp; System monitor (Sentry, Datadog).
+● Optimize APIs, database queries, functions, redis,...
+● Break down the tasks for juniors.
+● Training interns and freshers.
+--- Django, ReactJs, Redis, PostgreSQL, AWS ---</description><pubDate>Sun, 23 Aug 2020 15:22:00 GMT</pubDate></item><item><title>Microtech - Software Engineer</title><link>https://astro-paper.pages.dev/posts/exp-1/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-1/</guid><description>● Scraping data from the internet to storing it in mongodb. (~2 million records)
+● Cleansing data and load to PostgreSQL
+● Building app will predict the price of product.</description><pubDate>Sun, 01 Mar 2020 15:22:00 GMT</pubDate></item></channel></rss>

@@ -177,37 +177,37 @@ declare module 'astro:content' {
 		"experience": {
 "0_digitexx.md": {
 	id: "0_digitexx.md";
-  slug: "1-4";
+  slug: "exp-4";
   body: string;
   collection: "experience";
-  data: any
+  data: InferEntrySchema<"experience">
 } & { render(): Render[".md"] };
 "1_globaltech.md": {
 	id: "1_globaltech.md";
-  slug: "1-3";
+  slug: "exp-3";
   body: string;
   collection: "experience";
-  data: any
+  data: InferEntrySchema<"experience">
 } & { render(): Render[".md"] };
 "2_eoh.md": {
 	id: "2_eoh.md";
-  slug: "1-2";
+  slug: "exp-2";
   body: string;
   collection: "experience";
-  data: any
+  data: InferEntrySchema<"experience">
 } & { render(): Render[".md"] };
 "3_microtech.md": {
 	id: "3_microtech.md";
-  slug: "1-1";
+  slug: "exp-1";
   body: string;
   collection: "experience";
-  data: any
+  data: InferEntrySchema<"experience">
 } & { render(): Render[".md"] };
 };
 "projects": {
 "eoh.md": {
 	id: "eoh.md";
-  slug: "1-1";
+  slug: "proj-1";
   body: string;
   collection: "projects";
   data: any
@@ -216,7 +216,7 @@ declare module 'astro:content' {
 "publications": {
 "microtech.md": {
 	id: "microtech.md";
-  slug: "1-1";
+  slug: "pub-1";
   body: string;
   collection: "publications";
   data: any
