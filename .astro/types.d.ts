@@ -205,8 +205,15 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "projects": {
-"eoh.md": {
-	id: "eoh.md";
+"nft-ticket.md": {
+	id: "nft-ticket.md";
+  slug: "proj-2";
+  body: string;
+  collection: "projects";
+  data: any
+} & { render(): Render[".md"] };
+"rag-chatbot.md": {
+	id: "rag-chatbot.md";
   slug: "proj-1";
   body: string;
   collection: "projects";

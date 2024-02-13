@@ -55,7 +55,7 @@ export default function StartEndDate({
 
 const FormattedDatetime = ({ date }) => {
   let dateFormat = "present"
-  if (date !== "1970-01-11T22:58:30.521Z") {
+  if (!"1970-01-11T22:58:30.521Z".includes(date.getFullYear())) {
     dateFormat = format(
       date
         .toISOString(LOCALE.langTag, {
