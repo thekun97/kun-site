@@ -10,9 +10,11 @@ tags:
   - projects
 description:
 
-  The event ticketing system (NodeJS, MongoDB, Solidity).
+  The event ticketing system (Solidity, NodeJS, MongoDB).
 
   Smart contract in Solidity, allowing the event owner to issue tickets and 
 
   users who want to participate in the event need to mint tickets.
+
+  Tickets can be bought, sold, or exchanged between users, transaction fees will be paid to the event owner and platform owner. 
 ---

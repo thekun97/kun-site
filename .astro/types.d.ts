@@ -212,6 +212,13 @@ declare module 'astro:content' {
   collection: "projects";
   data: any
 } & { render(): Render[".md"] };
+"poa-iot.md": {
+	id: "poa-iot.md";
+  slug: "proj-3";
+  body: string;
+  collection: "projects";
+  data: any
+} & { render(): Render[".md"] };
 "rag-chatbot.md": {
 	id: "rag-chatbot.md";
   slug: "proj-1";
