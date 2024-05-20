@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Nam P. Nguyen</title><description>My personal site.</description><link>https://astro-paper.pages.dev/</link><item><title>DIGI-TEXX - Senior Software Engineer</title><link>https://astro-paper.pages.dev/posts/exp-4/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-4/</guid><description>● Clean and standardize code base.
-● Automate BDD testing, building, and deployment on Jenkins.
-● Implement new features for the AI micro-services system.
-● Optimize on-premise resource efficiency through the implementation of multi-processing/multi-threading.
+● End-to-end deployment with YOLO model.
+● End-to-end deployment with multilingual PaddleOCR model.
+● Automate building and deployment on Jenkins.
+● Implement new features for the AI system.
+● Convert all models to run under ONNX runtime and optimize resource usage.
+● Convert all models to run under ONNX runtime and optimize resource usage.
+● Switching between monolithic multi-threading and event-driven architecture based on on-premise resource demand.
 --- Python, Go, Celery, RabbitMQ, Jenkins ---</description><pubDate>Tue, 01 Aug 2023 15:22:00 GMT</pubDate></item><item><title>Global Tech - Data Engineer</title><link>https://astro-paper.pages.dev/posts/exp-3/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-3/</guid><description>● Develop a data streaming application for seamless communication among systems.
 ● Pre-process, clean, and standardize data according to the schema standard.
 ● --- NiFi, Kafka, Elasticsearch, Python, Scala ---</description><pubDate>Thu, 01 Dec 2022 15:22:00 GMT</pubDate></item><item><title>EoH - Software Engineer</title><link>https://astro-paper.pages.dev/posts/exp-2/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-2/</guid><description>● Design, develop and maintain the smart home features.

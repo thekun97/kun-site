@@ -20,13 +20,13 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
 <Layout title={`Projects | ${SITE.title}`}>
   <Header activeNav="projects" />
   <Main pageTitle="Projects" pageDesc="All the projects I've got.">
-    <ul>
+    <!-- <ul>
       {
         paginatedPosts.map(({ data, slug }) => (
           <NotLinkCard frontmatter={data} />
         ))
       }
-    </ul>
+    </ul> -->
   </Main>
 
   <Pagination

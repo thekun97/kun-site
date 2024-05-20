@@ -11,11 +11,19 @@ tags:
 description:
   ● Clean and standardize code base.
 
-  ● Automate BDD testing, building, and deployment on Jenkins.
+  ● End-to-end deployment with YOLO model.
 
-  ● Implement new features for the AI micro-services system.
+  ● End-to-end deployment with multilingual PaddleOCR model.
 
-  ● Optimize on-premise resource efficiency through the implementation of multi-processing/multi-threading.
+  ● Automate building and deployment on Jenkins.
+
+  ● Implement new features for the AI system.
+
+  ● Convert all models to run under ONNX runtime and optimize resource usage.
+
+  ● Convert all models to run under ONNX runtime and optimize resource usage.
+
+  ● Switching between monolithic multi-threading and event-driven architecture based on on-premise resource demand.
 
   --- Python, Go, Celery, RabbitMQ, Jenkins --- 
 
