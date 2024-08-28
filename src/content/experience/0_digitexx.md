@@ -9,21 +9,22 @@ draft: false
 tags:
   - docs
 description:
-  ● Clean and standardize code base.
+
+  ● Fine-tuning BERT for Named Entity Recognition (NER) 
 
   ● End-to-end deployment with YOLO model.
 
-  ● End-to-end deployment with multilingual PaddleOCR model.
-
   ● Automate building and deployment on Jenkins.
+
+  ● Deploy AI applications on on-premise test/staging servers.
 
   ● Implement new features for the AI system.
 
-  ● Convert all models to run under ONNX runtime and optimize resource usage.
+  ● Clean and standardize code base.
 
-  ● Convert all models to run under ONNX runtime and optimize resource usage.
+  ● Run under ONNX runtime and optimize resource usage.
 
-  ● Switching between monolithic multi-threading and event-driven architecture based on on-premise resource demand.
+  ● Build AI event-driven architecture based on on-premise resource demand.
 
   --- Python, Go, Celery, RabbitMQ, Jenkins --- 
 

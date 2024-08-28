@@ -20,7 +20,7 @@ export const LOGO_IMAGE = {
   enable: true,
   svg: false,
   width: 100,
-  height: 46,
+  height: 38,
 };
 
 export const SOCIALS: SocialObjects = [

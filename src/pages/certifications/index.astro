@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import Certifications from "@layouts/Certifications.astro";
+import getSortedPosts from "@utils/getSortedPosts";
+import getPagination from "@utils/getPagination";
+
+const certifications = await getCollection("certifications");
+
+const sortedPosts = getSortedPosts(certifications);
+
+const pagination = getPagination({
+  posts: sortedPosts,
+  page: 1,
+  isIndex: true,
+});
+---
+
+<Certifications {...pagination} />

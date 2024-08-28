@@ -4,7 +4,7 @@ import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
-  activeNav?: "experience" | "projects" | "publications" | "posts" | "tags" | "cv" | "search";
+  activeNav?: "experience" | "certifications" | "publications" | "posts" | "tags" | "cv" | "search";
 }
 
 const { activeNav } = Astro.props;
@@ -18,7 +18,7 @@ const { activeNav } = Astro.props;
         {
           LOGO_IMAGE.enable ? (
             <img
-              src={`/assets/${LOGO_IMAGE.svg ? "logo.svg" : "LOGO_KOIOS.png"}`}
+              src={`/assets/${LOGO_IMAGE.svg ? "logo.svg" : "krypta.png"}`}
               alt={SITE.title}
               width={LOGO_IMAGE.width}
               height={LOGO_IMAGE.height}
@@ -60,15 +60,15 @@ const { activeNav } = Astro.props;
               href="/experience/"
               class={activeNav === "experience" ? "active" : ""}
             >
-              Experience
+              Experiences
             </a>
           </li>
           <li>
             <a
-              href="/projects/"
-              class={activeNav === "projects" ? "active" : ""}
+              href="/certifications/"
+              class={activeNav === "certifications" ? "active" : ""}
             >
-              Projects
+              Certifications
             </a>
           </li>
           <li>

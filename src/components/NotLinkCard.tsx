@@ -13,7 +13,7 @@ export default function NotLinkCard({
   frontmatter,
   secHeading = true,
 }: Props) {
-  const { title, startDate, endDate, description, href, listAuthor, conference } = frontmatter;
+  const { title, startDate, endDate, description, href, subHref, listAuthor, conference } = frontmatter;
 
   const headerProps = {
     style: { viewTransitionName: slugifyStr(title) },
@@ -23,6 +23,7 @@ export default function NotLinkCard({
   return (
     <li className="my-6">
       <a
+        target="_blank"
         href={href}
         className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
       >
@@ -35,7 +36,16 @@ export default function NotLinkCard({
       <p className="text-md text-secondary mb-2">{listAuthor}</p>
       <p className="text-md text-secondary mb-2">{conference}</p>
       {!listAuthor && <StartEndDate startDate={startDate} endDate={endDate} />}
-      <pre>{description}</pre>
+      {subHref ? (
+        <a
+        target="_blank"
+        href={subHref}
+        className="inline-block decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+      >
+        <pre className="mt-2 hover:underline decoration-dashed">{description}</pre>
+      </a>
+        ) : (<pre className="mt-2">{description}</pre>) }
+      {/* <pre className="mt-2">{description}</pre> */}
     </li>
   );
 }

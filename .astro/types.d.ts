@@ -174,7 +174,16 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"experience": {
+		"certifications": {
+"aws-saa-c03.md": {
+	id: "aws-saa-c03.md";
+  slug: "proj-1";
+  body: string;
+  collection: "certifications";
+  data: any
+} & { render(): Render[".md"] };
+};
+"experience": {
 "0_digitexx.md": {
 	id: "0_digitexx.md";
   slug: "exp-4";
