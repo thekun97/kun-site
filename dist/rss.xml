@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Nam P. Nguyen</title><description>My personal site.</description><link>https://astro-paper.pages.dev/</link><item><title>DIGI-TEXX - Senior Software Engineer</title><link>https://astro-paper.pages.dev/posts/exp-4/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-4/</guid><description>● Fine-tuning BERT for Named Entity Recognition (NER)
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Nam P. Nguyen</title><description>My personal site.</description><link>https://astro-paper.pages.dev/</link><item><title>FireGroup - Senior Software Engineer</title><link>https://astro-paper.pages.dev/posts/exp-5/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-5/</guid><description>● Collected and processed data from multiple e-commerce sources and stored it across various database systems.
+● Built RAG (Retrieval-Augmented Generation) systems to optimize content creation for solopreneurs on e-commerce platforms.
+● Research, compare, analyze, and utilize multiple models on AWS Bedrock.
+● Build multi AI agent workflow systems (LangGraph, AutoGen).
+● Exploited AI coding assistants (Claude, GPT) daily.
+● 100% unittest coverage and managing code quality with SonarQube.
+● Monitored the delivery process.
+● Mentor interns and freshers in writing testable code and valuable test suites for AI agents functionalities.
+--- Python, MongoDB, Elasticsearch, VectorDB, pgvector, PostgreSQL, S3 ---</description><pubDate>Tue, 01 Oct 2024 15:22:00 GMT</pubDate></item><item><title>DIGI-TEXX - Senior Software Engineer</title><link>https://astro-paper.pages.dev/posts/exp-4/</link><guid isPermaLink="true">https://astro-paper.pages.dev/posts/exp-4/</guid><description>● Fine-tuning BERT for Named Entity Recognition (NER)
 ● End-to-end deployment with YOLO model.
 ● Automate building and deployment on Jenkins.
 ● Deploy AI applications on on-premise test/staging servers.
