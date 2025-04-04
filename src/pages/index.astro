@@ -12,14 +12,19 @@ import { SOCIALS } from "@config";
 
 const posts = await getCollection("experience");
 
-const socialCount = SOCIALS.filter(social => social.active).length;
+const socialCount = SOCIALS.filter((social) => social.active).length;
 ---
 
 <Layout>
   <Header />
   <main id="main-content">
     <section id="hero">
-      <img src="/main_image.jpeg" alt="Nam P. Nguyen" width="200" height="200">
+      <img
+        src="/main_image.jpeg"
+        alt="Nam P. Nguyen"
+        width="200"
+        height="200"
+      />
       <div id="text-hero">
         <h1>Nam P. Nguyen</h1>
         <a
@@ -64,128 +69,207 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     <section id="featured">
       <h2>Fun Facts About Me</h2>
       <br />
-      <p>● Researching the depths of Software Architecture and Data/AI Systems.<p>
-      <br />
-      <p>● The only thing I know is that I know nothing.<p>
-      <br />
-      <p>● So enjoys interacting with people who know nothing.</p>
-      <br />
       <p>
-        ● Relaxing with music.
+        ● Researching the depths of Software Architecture and Data/AI Systems.<p
+        >
+          <br />
+          <p>
+            ● The only thing I know is that I know nothing.<p>
+              <br />
+              <p>● So enjoys interacting with people who know nothing.</p>
+              <br />
+              <p>● Relaxing with music.</p>
+            </p>
+
+            <Hr />
+
+            <section id="featured">
+              <h2>Educations</h2>
+              <br />
+              <p>
+                <b>● Master's Degree (2022 - 2024)</b>
+                <br />
+                &nbsp;&nbsp;GPA: 9.1
+                <a
+                  class="inline-block decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+                  href="https://drive.google.com/file/d/1IBlPbzsqr854PozCKlgdkC5ek0cdKOti/view?usp=sharing"
+                  target="_blank"
+                  ><span class="mt-2 hover:underline decoration-dashed"
+                    >(vi)</span
+                  ></a
+                >
+                <a
+                  class="inline-block decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+                  href="https://drive.google.com/file/d/1I9p4wVzZZpsH_rBPr7pxxPzYxIDzaXR5/view?usp=sharing"
+                  target="_blank"
+                  ><span class="mt-2 hover:underline decoration-dashed"
+                    >(en)</span
+                  ></a
+                >
+                <br />
+                &nbsp;&nbsp;University of Science - VNUHCM
+              </p>
+
+              <br />
+
+              <p>
+                <b>● Bachelor's Degree (2015 - 2019)</b>
+                <br />
+                &nbsp;&nbsp;GPA: 6.9
+                <br />
+                &nbsp;&nbsp;University of Science - VNUHCM
+              </p>
+
+              <br />
+            </section>
+
+            <Hr />
+
+            <section id="camo-skill">
+              <h2>Programing Languages</h2>
+              <br />
+              <div id="flex-row">
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/354238/python.svg"
+                />
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/349419/javascript.svg"
+                />
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/355038/golang.svg"
+                />
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/315122/other-1.svg"
+                />
+                <!-- <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/473774/rust.svg"> -->
+              </div>
+              <br />
+              <h2>Databases</h2>
+              <br />
+              <div id="flex-row">
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/373845/mongo.svg"
+                />
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/354200/postgresql.svg"
+                />
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/354272/redis.svg"
+                />
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/315122/other-1.svg"
+                />
+              </div>
+              <br />
+              <h2>Infrastructure</h2>
+              <br />
+              <div id="flex-row">
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/376356/aws.svg"
+                />
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/354926/docker.svg"
+                />
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/373699/jenkins.svg"
+                />
+                <img
+                  alt=""
+                  class="marginRight"
+                  width="5%"
+                  src="https://www.svgrepo.com/show/315122/other-1.svg"
+                />
+              </div>
+            </section>
+          </p>
+
+          <Footer />
+        </p>
+
+        <style>
+          /* ===== Hero Section ===== */
+          #hero {
+            @apply pb-6 pt-8 flex sm:flex-row sm:items-center;
+          }
+          #text-hero {
+            @apply ml-8;
+          }
+          #hero h1 {
+            @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+          }
+          #hero .rss-link {
+            @apply mb-6;
+          }
+          #hero .rss-icon {
+            @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+          }
+          #hero p {
+            @apply my-2;
+          }
+          .social-wrapper {
+            @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+          }
+          .social-links {
+            @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+          }
+
+          #flex-row {
+            @apply flex sm:flex-row;
+          }
+
+          .marginRight {
+            @apply mr-8;
+          }
+
+          /* ===== Featured & Recent Posts Sections ===== */
+          #featured,
+          #camo-skill,
+          #recent-posts {
+            @apply pb-6 pt-12;
+          }
+          #featured h2,
+          #camo-skill h2,
+          #recent-posts h2 {
+            @apply text-2xl font-semibold tracking-wide;
+          }
+          .all-posts-btn-wrapper {
+            @apply my-8 text-center;
+          }
+        </style>
       </p>
     </section>
-
-    <Hr />
-
-    <section id="featured">
-      <h2>Educations</h2>
-      <br />
-      <p>
-        <b>● Master's Degree (2022 - 2024)</b>
-        <br>
-        &nbsp;&nbsp;GPA: 9.1
-        <a class="inline-block decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0" href="https://drive.google.com/file/d/1IBlPbzsqr854PozCKlgdkC5ek0cdKOti/view?usp=sharing" target="_blank"><span class="mt-2 hover:underline decoration-dashed">(vi)</span></a> 
-        <a class="inline-block decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0" href="https://drive.google.com/file/d/1I9p4wVzZZpsH_rBPr7pxxPzYxIDzaXR5/view?usp=sharing" target="_blank"><span class="mt-2 hover:underline decoration-dashed">(en)</span></a>
-        <br>
-        &nbsp;&nbsp;University of Science - VNUHCM
-      </p>
-      
-      <br />
-
-      <p>
-        <b>● Bachelor's Degree (2015 - 2019)</b>
-        <br>
-        &nbsp;&nbsp;GPA: 6.9
-        <br>
-        &nbsp;&nbsp;University of Science - VNUHCM
-      </p>
-
-      <br />
-    </section>
-
-    <Hr />
-
-    <section id="camo-skill">
-        <h2>Programing Languages</h2>
-        <br />
-        <div id="flex-row">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/354238/python.svg">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/349419/javascript.svg">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/355038/golang.svg">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/315122/other-1.svg">
-          <!-- <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/473774/rust.svg"> -->
-        </div>
-        <br />
-        <h2>Databases</h2>
-        <br />
-        <div id="flex-row">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/373845/mongo.svg">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/354200/postgresql.svg">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/354272/redis.svg">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/315122/other-1.svg">
-        </div>
-        <br />
-        <h2>Infrastructure</h2>
-        <br />
-        <div id="flex-row">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/376356/aws.svg">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/354926/docker.svg">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/373699/jenkins.svg">
-          <img alt="" class="marginRight" width="5%" src="https://www.svgrepo.com/show/315122/other-1.svg">
-        </div>
-    </section>
-  </main>
-
-  <Footer />
-</Layout>
-
-<style>
-  /* ===== Hero Section ===== */
-  #hero {
-    @apply pb-6 pt-8 flex sm:flex-row sm:items-center;
-  }
-  #text-hero {
-    @apply ml-8;
-  }
-  #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
-  }
-  #hero .rss-link {
-    @apply mb-6;
-  }
-  #hero .rss-icon {
-    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
-  }
-  #hero p {
-    @apply my-2;
-  }
-  .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
-  }
-  .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
-  }
-
-  #flex-row {
-    @apply flex sm:flex-row
-  }
-
-  .marginRight {
-    @apply mr-8
-  }
-
-  /* ===== Featured & Recent Posts Sections ===== */
-  #featured,
-  #camo-skill,
-  #recent-posts {
-    @apply pb-6 pt-12;
-  }
-  #featured h2,
-  #camo-skill h2,
-  #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
-  }
-  .all-posts-btn-wrapper {
-    @apply my-8 text-center;
-  }
-</style>
+  </main></Layout
+>

@@ -8,10 +8,7 @@ featured: true
 draft: false
 tags:
   - projects
-description:
-
-  Question-Answering based on User's Documents and Data Sources.
+description: Question-Answering based on User's Documents and Data Sources.
 
   - https://github.com/thekun97/chat-bot-rag
-
 ---

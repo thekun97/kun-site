@@ -4,7 +4,14 @@ import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
-  activeNav?: "experience" | "certifications" | "publications" | "posts" | "tags" | "cv" | "search";
+  activeNav?:
+    | "experience"
+    | "certifications"
+    | "publications"
+    | "posts"
+    | "tags"
+    | "cv"
+    | "search";
 }
 
 const { activeNav } = Astro.props;
@@ -90,8 +97,11 @@ const { activeNav } = Astro.props;
             </a>
           </li> -->
           <li>
-            <a target="_blank" href="https://drive.google.com/file/d/1MmmccrZ9dynLEObZGtqhXEjb-PFEiP8L/view?usp=sharing" 
-            class={activeNav === "cv" ? "active" : ""}>
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1MmmccrZ9dynLEObZGtqhXEjb-PFEiP8L/view?usp=sharing"
+              class={activeNav === "cv" ? "active" : ""}
+            >
               CV
             </a>
           </li>
@@ -227,7 +237,7 @@ const { activeNav } = Astro.props;
       menuBtn.setAttribute("aria-expanded", menuExpanded ? "false" : "true");
       menuBtn.setAttribute(
         "aria-label",
-        menuExpanded ? "Open Menu" : "Close Menu"
+        menuExpanded ? "Open Menu" : "Close Menu",
       );
       menuItems?.classList.toggle("display-none");
     });

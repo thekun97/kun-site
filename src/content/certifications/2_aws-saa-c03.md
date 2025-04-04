@@ -10,7 +10,5 @@ featured: true
 draft: false
 tags:
   - certifications
-description:
-  "Score: 834/1000"
-
+description: "Score: 834/1000"
 ---

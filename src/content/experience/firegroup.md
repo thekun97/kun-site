@@ -9,7 +9,6 @@ draft: false
 tags:
   - docs
 description:
-
   ● Collected and processed data from multiple e-commerce sources and stored it across various database systems.
 
   ● Built RAG (Retrieval-Augmented Generation) systems to optimize content creation for solopreneurs on e-commerce platforms.

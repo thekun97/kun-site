@@ -8,9 +8,7 @@ featured: true
 draft: false
 tags:
   - docs
-description:
-
-  ● Fine-tuning BERT for Named Entity Recognition (NER) 
+description: ● Fine-tuning BERT for Named Entity Recognition (NER)
 
   ● End-to-end deployment with YOLO model.
 
@@ -26,6 +24,5 @@ description:
 
   ● Build AI event-driven architecture based on on-premise resource demand.
 
-  --- Python, Go, Celery, RabbitMQ, Jenkins --- 
-
+  --- Python, Go, Celery, RabbitMQ, Jenkins ---
 ---

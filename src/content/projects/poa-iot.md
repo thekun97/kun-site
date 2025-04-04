@@ -9,13 +9,11 @@ draft: false
 tags:
   - projects
 description:
+  I am modifying the Proof-of-Authority consensus algorithm to be suitable for low-powered IoT devices.
 
-    I am modifying the Proof-of-Authority consensus algorithm to be suitable for low-powered IoT devices.
+  With the goal of eliminating the leader/follower mechanism and running asynchronously.
 
-    With the goal of eliminating the leader/follower mechanism and running asynchronously.
+  Adding a lightweight competitive mechanism for miners by Threshold-BLS digital signature.
 
-    Adding a lightweight competitive mechanism for miners by Threshold-BLS digital signature.
-
-    - https://github.com/thekun97/PoA-MuSeal
-
+  - https://github.com/thekun97/PoA-MuSeal
 ---

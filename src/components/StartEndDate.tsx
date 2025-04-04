@@ -14,9 +14,7 @@ function format(inputDate) {
   var date = new Date(inputDate);
   if (!isNaN(date.getTime())) {
     // Months use 0 index.
-    return (
-      (date.getMonth() + 1) + "/" + date.getFullYear()
-    );
+    return date.getMonth() + 1 + "/" + date.getFullYear();
   }
 }
 
@@ -39,23 +37,18 @@ export default function StartEndDate({
         <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"></path>
       </svg>
       <span className={`italic ${size === "sm" ? "text-sm" : "text-base"}`}>
-        <FormattedDatetime
-          date={startDate}
-        />
+        <FormattedDatetime date={startDate} />
       </span>
       <span aria-hidden="true"> - </span>
       <span className={`italic ${size === "sm" ? "text-sm" : "text-base"}`}>
-        <FormattedDatetime
-          date={endDate}
-        />
+        <FormattedDatetime date={endDate} />
       </span>
-      
     </div>
   );
 }
 
 const FormattedDatetime = ({ date }) => {
-  let dateFormat = "present"
+  let dateFormat = "present";
   if (!"1970-01-11T22:58:30.521Z".includes(date.getFullYear())) {
     dateFormat = format(
       date
@@ -64,7 +57,7 @@ const FormattedDatetime = ({ date }) => {
           month: "short",
           day: "numeric",
         })
-        .split("T")[0]
+        .split("T")[0],
     );
   }
 

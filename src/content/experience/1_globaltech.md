@@ -13,6 +13,5 @@ description:
 
   ● Pre-process, clean, and standardize data according to the schema standard.
 
-  ● --- NiFi, Kafka, Elasticsearch, Python, Scala --- 
-
+  ● --- NiFi, Kafka, Elasticsearch, Python, Scala ---
 ---

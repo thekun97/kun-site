@@ -6,10 +6,10 @@ import getPagination from "@utils/getPagination";
 
 const certifications = await getCollection("certifications");
 
-const sortedPosts = getSortedPosts(certifications);
+// const sortedPosts = getSortedPosts(certifications);
 
 const pagination = getPagination({
-  posts: sortedPosts,
+  posts: certifications,
   page: 1,
   isIndex: true,
 });

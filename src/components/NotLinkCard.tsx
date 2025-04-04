@@ -9,11 +9,17 @@ export interface Props {
   secHeading?: boolean;
 }
 
-export default function NotLinkCard({
-  frontmatter,
-  secHeading = true,
-}: Props) {
-  const { title, startDate, endDate, description, href, subHref, listAuthor, conference } = frontmatter;
+export default function NotLinkCard({ frontmatter, secHeading = true }: Props) {
+  const {
+    title,
+    startDate,
+    endDate,
+    description,
+    href,
+    subHref,
+    listAuthor,
+    conference,
+  } = frontmatter;
 
   const headerProps = {
     style: { viewTransitionName: slugifyStr(title) },
@@ -38,14 +44,17 @@ export default function NotLinkCard({
       {!listAuthor && <StartEndDate startDate={startDate} endDate={endDate} />}
       {subHref ? (
         <a
-        target="_blank"
-        href={subHref}
-        className="inline-block decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
-      >
-        <pre className="mt-2 hover:underline decoration-dashed">{description}</pre>
-      </a>
-        ) : (<pre className="mt-2">{description}</pre>) }
-      {/* <pre className="mt-2">{description}</pre> */}
+          target="_blank"
+          href={subHref}
+          className="inline-block decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+        >
+          <pre className="mt-2 hover:underline decoration-dashed">
+            {description}
+          </pre>
+        </a>
+      ) : (
+        <pre className="mt-2">{description}</pre>
+      )}
     </li>
   );
 }

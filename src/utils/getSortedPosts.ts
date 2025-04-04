@@ -7,11 +7,11 @@ const getSortedPosts = (posts: CollectionEntry<"certifications">[]) => {
     .sort(
       (a, b) =>
         Math.floor(
-          new Date(b.data.startDate ?? b.data.endDate).getTime() / 1000
+          new Date(b.data.startDate ?? b.data.endDate).getTime() / 1000,
         ) -
         Math.floor(
-          new Date(a.data.startDate ?? a.data.endDate).getTime() / 1000
-        )
+          new Date(a.data.startDate ?? a.data.endDate).getTime() / 1000,
+        ),
     );
 };
 
